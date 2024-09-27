@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from 'react';
 
 const Contact = () => {
@@ -24,7 +24,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="py-10 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center">
         <h1 className="text-4xl font-bold">Get in Touch with Us</h1>
-        <p className="mt-2 text-lg">We're here to help you with any inquiries</p>
+        <p className="mt-2 text-lg">We&apos;re here to help you with any inquiries</p>
       </section>
 
       {/* Contact Form and Details Section */}
@@ -37,7 +37,7 @@ const Contact = () => {
           <label className="block mb-2">Name</label>
           <input
             type="text"
-            name="name" 
+            name="name"
             value={formData.name}
             onChange={handleChange}
             className="w-full mb-4 p-2 border rounded"
@@ -115,7 +115,7 @@ const Contact = () => {
             </summary>
             <p className="mt-2 text-gray-700">
               You can track your order by logging into your account and visiting
-              the "Order History" section.
+              the &quot;Order History&quot; section.
             </p>
           </details>
           <details className="p-4 border rounded shadow">
