@@ -37,7 +37,7 @@ const Contact = () => {
           <label className="block mb-2">Name</label>
           <input
             type="text"
-            name="name"
+            name="name" 
             value={formData.name}
             onChange={handleChange}
             className="w-full mb-4 p-2 border rounded"
