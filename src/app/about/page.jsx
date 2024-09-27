@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from 'react';
+import React from "react";
 
 function AboutPage() {
   return (
@@ -17,7 +17,9 @@ function AboutPage() {
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
         <p className="text-lg leading-relaxed text-gray-700 bg-gray-100 p-6 rounded-lg shadow-md">
-          Our mission is to bring you high-quality, stylish products at affordable prices. We carefully curate our collections to reflect the latest trends while ensuring that every piece meets our high standards of craftsmanship.
+          Our mission is to bring you high-quality, stylish products at affordable prices. We carefully curate our
+          collections to reflect the latest trends while ensuring that every piece meets our high standards of
+          craftsmanship.
         </p>
       </section>
 
@@ -25,7 +27,9 @@ function AboutPage() {
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
         <p className="text-lg leading-relaxed text-gray-700 bg-gray-100 p-6 rounded-lg shadow-md">
-          Founded in 2020, we started as a small online store, and over the years, we’ve grown into a well-loved brand. Our passion for quality and customer satisfaction drives everything we do. From humble beginnings, we've built a community of loyal customers who trust us for their shopping needs.
+          Founded in 2020, we started as a small online store, and over the years, we&apos;ve grown into a well-loved
+          brand. Our passion for quality and customer satisfaction drives everything we do. From humble beginnings,
+          we&apos;ve built a community of loyal customers who trust us for their shopping needs.
         </p>
       </section>
 
@@ -42,14 +46,19 @@ function AboutPage() {
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Meet the Team</h2>
         <p className="text-lg leading-relaxed text-gray-700 bg-gray-100 p-6 rounded-lg shadow-md">
-          We are a team of dedicated professionals who are passionate about bringing you the best online shopping experience. Each member of our team contributes to making sure every order is fulfilled with care and precision.
+          We are a team of dedicated professionals who are passionate about bringing you the best online shopping
+          experience. Each member of our team contributes to making sure every order is fulfilled with care and
+          precision.
         </p>
       </section>
 
       {/* Call to Action */}
       <section className="text-center mt-16">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Want to know more?</h2>
-        <Link href="/products" className="inline-block bg-blue-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-blue-600 transition-colors">
+        <Link
+          href="/products"
+          className="inline-block bg-blue-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-blue-600 transition-colors"
+        >
           Browse Our Products
         </Link>
       </section>
