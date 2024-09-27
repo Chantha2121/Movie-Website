@@ -37,7 +37,7 @@ function AboutPage() {
       {/* Image Section */}
       <div className="my-12">
         <Image
-          src="/pic.webp" // Replace with your actual image path
+          src="/pic.png" // Replace with your actual image path
           alt="Our Team"
           width={1200} // Example width, adjust based on your actual image dimensions
           height={800} // Example height, adjust based on your actual image dimensions
