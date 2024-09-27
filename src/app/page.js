@@ -23,7 +23,7 @@ function HomePage() {
   };
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 lg:p-14">
       {/* Hero Banner with Search Bar */}
       <section className="relative bg-orange-500 text-white py-8 text-center">
         <h1 className="text-4xl font-bold mb-2">Chantha Online Shop</h1>

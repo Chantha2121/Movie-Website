@@ -1,32 +1,58 @@
+"use client";
+import Link from "next/link";
 import React from 'react';
 
 function AboutPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-amber-500 mb-4">About Us</h1>
-      <p className="text-lg leading-relaxed text-gray-800 mb-6 bg-gray-100 p-4 rounded-lg shadow-md">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta expedita dicta illum dignissimos assumenda fuga corporis nesciunt reprehenderit vero? Velit labore cumque dignissimos molestiae repellat dolores maxime dolorum explicabo!
-      </p>
-      <p className="text-lg leading-relaxed text-gray-800 mb-6 bg-gray-100 p-4 rounded-lg shadow-md">
-        Earum eligendi magni at sunt dolorum. Vero, perferendis dignissimos molestiae consectetur explicabo temporibus debitis placeat voluptatum sint neque sed aliquam cumque in, quisquam dolore dicta inventore porro quibusdam blanditiis aspernatur?
-      </p>
-      <p className="text-lg leading-relaxed text-gray-800 mb-6 bg-gray-100 p-4 rounded-lg shadow-md">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptatum architecto recusandae deleniti sit dolorum esse, unde aspernatur et. Voluptate dolorum iste delectus maiores repellat esse quos tenetur magnam sint!
-      </p>
-      <p className="text-lg leading-relaxed text-gray-800 mb-6 bg-gray-100 p-4 rounded-lg shadow-md">
-        Illo sit architecto id eius dolorem corporis quasi unde eveniet a eos. Est qui cupiditate nisi tenetur adipisci hic, itaque molestias possimus magni doloremque ducimus iure consectetur, quasi, voluptas eveniet?
-      </p>
-      <p className="text-lg leading-relaxed text-gray-800 mb-6 bg-gray-100 p-4 rounded-lg shadow-md">
-        Voluptatem quae in quas ipsa dolor fugit minus ipsam repellat officiis placeat, ullam similique tempore, molestiae atque debitis adipisci perspiciatis. Ipsum quam eveniet beatae, voluptate officiis recusandae? Ullam, esse corrupti!
-      </p>
-      {/* Optional Image Section */}
-      <div className="mt-8">
+    <div className="max-w-6xl mx-auto px-4 py-16 mt-20">
+      {/* Hero Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold text-amber-500 mb-6">About Our Shop</h1>
+        <p className="text-xl text-gray-600 leading-relaxed">
+          Welcome to our store! We are passionate about providing the best products and excellent customer service.
+        </p>
+      </div>
+
+      {/* Our Mission Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+        <p className="text-lg leading-relaxed text-gray-700 bg-gray-100 p-6 rounded-lg shadow-md">
+          Our mission is to bring you high-quality, stylish products at affordable prices. We carefully curate our collections to reflect the latest trends while ensuring that every piece meets our high standards of craftsmanship.
+        </p>
+      </section>
+
+      {/* Brand Story Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
+        <p className="text-lg leading-relaxed text-gray-700 bg-gray-100 p-6 rounded-lg shadow-md">
+          Founded in 2020, we started as a small online store, and over the years, we’ve grown into a well-loved brand. Our passion for quality and customer satisfaction drives everything we do. From humble beginnings, we've built a community of loyal customers who trust us for their shopping needs.
+        </p>
+      </section>
+
+      {/* Image Section */}
+      <div className="my-12">
         <img
-          src="path_to_your_image.jpg" // Replace with your image source
-          alt="About Us"
+          src="/pic.webp" // Replace with your actual image path
+          alt="Our Team"
           className="w-full h-auto rounded-lg shadow-lg"
         />
       </div>
+
+      {/* Team Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Meet the Team</h2>
+        <p className="text-lg leading-relaxed text-gray-700 bg-gray-100 p-6 rounded-lg shadow-md">
+          We are a team of dedicated professionals who are passionate about bringing you the best online shopping experience. Each member of our team contributes to making sure every order is fulfilled with care and precision.
+        </p>
+      </section>
+
+      {/* Call to Action */}
+      <section className="text-center mt-16">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Want to know more?</h2>
+        <Link href="/products" className="inline-block bg-blue-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-blue-600 transition-colors">
+          Browse Our Products
+        </Link>
+      </section>
     </div>
   );
 }
