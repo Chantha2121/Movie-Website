@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 function AboutPage() {
   return (
@@ -35,9 +36,11 @@ function AboutPage() {
 
       {/* Image Section */}
       <div className="my-12">
-        <img
+        <Image
           src="/pic.webp" // Replace with your actual image path
           alt="Our Team"
+          width={1200} // Example width, adjust based on your actual image dimensions
+          height={800} // Example height, adjust based on your actual image dimensions
           className="w-full h-auto rounded-lg shadow-lg"
         />
       </div>
