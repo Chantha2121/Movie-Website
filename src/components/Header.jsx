@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Manage mobile menu state
+  const [search, setSearch] = useState('');
 
   // Toggle the mobile menu
   const toggleMenu = () => {

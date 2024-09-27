@@ -37,7 +37,7 @@ async function Page() {
             </div>
           </Link>
 
-          <Link href={`addCard`}>
+          <Link href={`/addCard/${product.id}`}>
             <button
               className="buy-now-button bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg w-full transition-colors duration-300 hover:bg-blue-600"
             >

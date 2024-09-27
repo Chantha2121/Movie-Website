@@ -32,7 +32,7 @@ function ProductDetailPage({ params }) {
   }
 
   return (
-    <div className="container mx-auto mt-20 p-4">
+    <div className="container mx-auto mt-24 mb-44 p-4">
       {/* Product Image and Details */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Product Image */}
@@ -56,7 +56,7 @@ function ProductDetailPage({ params }) {
             <span className="text-yellow-500">⭐ {product.rating.rate}</span>
             <span className="ml-2 text-gray-500">({product.rating.count} reviews)</span>
           </div>
-          <Link href="/addCard">
+          <Link href={`/addCard/${product.id}`}>
           <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 hover:bg-blue-600">
             Add to Cart
           </button>
